@@ -1,5 +1,5 @@
 {
-    "name": "wafaaelcadi/gestion-formation",
+    "name": "mouadziani/gestion-formation",
     "description": "$validation = $validator->validate($inputs, $rules);",
     "require": {
         "rakit/validation": "^1.1",
