@@ -28,23 +28,24 @@ class UserController extends Controller
 		if(serverMethod() != 'POST') {
 			redirect('user/create');
 		}
+
 		// Rules 
 		$rules = [
-		    'username'          => 'required|min:3|max:20',
-		    'email'             => 'required|email',
-		    'password'			=> 'required|min:6',
-		    'confirm_password' 	=> 'required|same:password',
-		    'createdAt' 	    => 'required|date'
+			'username'         => 'required|min:3|max:20',
+			'email'            => 'required|email',
+			'password'         => 'required|min:6',
+			'confirm_password' => 'required|same:password',
+			'createdAt'        => 'required|date'
 		];
 
 		// validate request
 		$validator = new Validator;
 		$validation = $validator->validate($_POST, $rules);
 		if($validation->fails()) {
-		    $errors = $validation->errors()->firstOfAll();
-		    return $this->view('users/create', ['errors' => $errors]);
+			$errors = $validation->errors()->firstOfAll();
+			return $this->view('users/create', ['errors' => $errors]);
 		} else {
-		    $user = $this->model;
+			$user = $this->model;
 			$user->username = $_POST['username'];
 			$user->email = $_POST['email'];
 			$user->password = $_POST['password'];
@@ -72,27 +73,28 @@ class UserController extends Controller
 		if(serverMethod() != 'POST') {
 			redirect('user/index');
 		}
+
 		// Rules 
 		$rules = [
-		    'username'          => 'required|min:3|max:20',
-		    'email'             => 'required|email',
-		    'password'			=> 'required|min:6',
-		    'confirm_password' 	=> 'required|same:password',
-		    'createdAt' 	    => 'required|date'
+			'username'         => 'required|min:3|max:20',
+			'email'            => 'required|email',
+			'password'         => 'required|min:6',
+			'confirm_password' => 'required|same:password',
+			'createdAt'        => 'required|date'
 		];
 
 		// Validate request
 		$validator = new Validator;
 		$validation = $validator->validate($_POST, $rules);
 		if($validation->fails()) {
-		    $errors = $validation->errors()->firstOfAll();
-		    $user = $this->model->find($id);
+			$errors = $validation->errors()->firstOfAll();
+			$user = $this->model->find($id);
 			if($user) {
 				return $this->view('users/edit', ['user' => $user, 'errors' => $errors]);
 			}
 		} else {
-		    $user = $this->model;
-		    $user->id = $id; 
+			$user = $this->model;
+			$user->id = $id; 
 			$user->username = $_POST['username'];
 			$user->email = $_POST['email'];
 			$user->password = $_POST['password'];
@@ -102,8 +104,8 @@ class UserController extends Controller
 				Flash::message('Error !', 'error');
 				redirect('user/index');
 			}
-		    Flash::message('User ' . $_POST['username'] . ' was updated successfully !', 'success');
-		    redirect('user/index');
+			Flash::message('User ' . $_POST['username'] . ' was updated successfully !', 'success');
+			redirect('user/index');
 		}
 	}
 
@@ -114,15 +116,15 @@ class UserController extends Controller
 		}
 
 		if(!$this->model->delete($id)) {
-     		Flash::message('Error !', 'error');
+			Flash::message('Error !', 'error');
 			redirect('user/index');
 		}
 		Flash::message('User deleted successfully !', 'success');
-	    redirect('user/index'); 
+		redirect('user/index'); 
 	}
 
 	public function search()
-	{ 
+	{
 		if(serverMethod() != 'POST' || !isset($_POST['keyword']) || empty($_POST['keyword'])) {
 			redirect('user/index');
 		}
