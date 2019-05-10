@@ -121,7 +121,7 @@ class UserController extends Controller
 	    redirect('user/index'); 
 	}
 
-	public function searche()
+	public function search()
 	{ 
 		if(serverMethod() != 'POST' || !isset($_POST['keyword']) || empty($_POST['keyword'])) {
 			redirect('user/index');
