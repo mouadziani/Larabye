@@ -1,6 +1,5 @@
 # ⭐ Larabye ⭐
 [![PHP Min](https://img.shields.io/badge/PHP-%3E%3D%205.3-blue.svg)](https://github.com/php)
-
 Larabye is a open source mini PHP & MVC framework, created by **Mouad ZIANI (ROMAC)** 
 # Installation
 ### Requirements
@@ -20,8 +19,7 @@ Then run composer to install dependecies
 
 Now it's all done, you only need to create a database and change configurations in **app/config.php** to match your server's configuration, for example:
 
-```php
-<?php                       
+```php                     
     /*
     * Database Configuration
     */
@@ -35,49 +33,49 @@ Now it's all done, you only need to create a database and change configurations 
 Larabye is easy to use and understand, if you still have a doubt about how PHP/MVC works, you can use this framework to give you a push forward.
 
 ```bash
-        ├── app
-        │   ├── controllers
-        │   │   ├── HomeController.php
-        │   │   └── UserController.php
-        │   ├── core
-        │   │   ├── App.php
-        │   │   └── Controller.php
-        │   ├── helpers
-        │   │   ├── Dao.php
-        │   │   └── helper.php
-        │   ├── models
-        │   │   └── User.php
-        │   ├── views
-        │   │   ├── partials
-        │   │   │   ├── _header.php
-        │   │   │   ├── _footer.php
-        │   │   │   └── _sub_footer.php
-        │   │   ├── users
-        │   │   │   ├── index.php
-        │   │   │   ├── create.php
-        │   │   │   └── edit.php
-        │   │   └── home.php
-        │   ├── init.php
-        │   ├── database.php
-        │   └── .htaccess
-        ├── composer.json
-        ├── public
-        │   ├── css
-        │   │   └── *.css
-        │   ├── fonts/..
-        │   ├── imgs/..
-        │   ├── js
-        │   │   └── *.
-        │   ├── .htaccess
-        │   └── index.php
-        ├── .gitignore
-        ├── composer.json
-        ├── LICENCE
-        └── READMED.md
+    ├── app
+    │   ├── controllers
+    │   │   ├── HomeController.php
+    │   │   └── UserController.php
+    │   ├── core
+    │   │   ├── App.php
+    │   │   └── Controller.php
+    │   ├── helpers
+    │   │   ├── Dao.php
+    │   │   └── helper.php
+    │   ├── models
+    │   │   └── User.php
+    │   ├── views
+    │   │   ├── partials
+    │   │   │   ├── _header.php
+    │   │   │   ├── _footer.php
+    │   │   │   └── _sub_footer.php
+    │   │   ├── users
+    │   │   │   ├── index.php
+    │   │   │   ├── create.php
+    │   │   │   └── edit.php
+    │   │   └── home.php
+    │   ├── init.php
+    │   ├── database.php
+    │   └── .htaccess
+    ├── composer.json
+    ├── public
+    │   ├── css
+    │   │   └── *.css
+    │   ├── fonts/..
+    │   ├── imgs/..
+    │   ├── js
+    │   │   └── *.
+    │   ├── .htaccess
+    │   └── index.php
+    ├── .gitignore
+    ├── composer.json
+    ├── LICENCE
+    └── READMED.md
 ```      
 
 ## License
 Larabye is licensed under the [MIT](LICENSE) license.
 
- ## Note 
- This project was made for 8.19
+## Note 
+This project was made for 8.19
