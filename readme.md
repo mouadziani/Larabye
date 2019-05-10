@@ -1,5 +1,6 @@
 # ⭐ Larabye ⭐
 [![PHP Min](https://img.shields.io/badge/PHP-%3E%3D%205.3-blue.svg)](https://github.com/php)
+
 Larabye is a open source mini PHP & MVC framework, created by **Mouad ZIANI (ROMAC)** 
 # Installation
 ### Requirements
@@ -20,8 +21,7 @@ Then run composer to install dependecies
 Now it's all done, you only need to create a database and change configurations in **app/config.php** to match your server's configuration, for example:
 
 ```php
-<?php
- <pre>                        
+<?php                       
     /*
     * Database Configuration
     */
@@ -29,9 +29,8 @@ Now it's all done, you only need to create a database and change configurations 
     $host     = 'localhost';
     $userName = 'root';
     $password = 'root';
-</pre>
 ```
-                           
+
 # Architecture
 Larabye is easy to use and understand, if you still have a doubt about how PHP/MVC works, you can use this framework to give you a push forward.
 
@@ -75,7 +74,10 @@ Larabye is easy to use and understand, if you still have a doubt about how PHP/M
         ├── composer.json
         ├── LICENCE
         └── READMED.md
-```                   
+```      
+
+## License
+Larabye is licensed under the [MIT](LICENSE) license.
 
  ## Note 
  This project was made for 8.19
