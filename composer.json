@@ -1,6 +1,12 @@
 {
-    "name": "mouadziani/gestion-formation",
-    "description": "$validation = $validator->validate($inputs, $rules);",
+    "name": "larabye",
+    "description": "Larabye mini MVC framework for PHP.",
+    "authors": [
+        {
+            "name": "ZIANI Mouad",
+            "email": "mouad.ziani1997@gmail.com"
+        }
+    ],
     "require": {
         "rakit/validation": "^1.1",
         "tamtamchik/simple-flash": "^1.2"
