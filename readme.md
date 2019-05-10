@@ -1,7 +1,7 @@
 # ⭐ Larabye ⭐
 [![PHP Min](https://img.shields.io/badge/PHP-%3E%3D%205.3-blue.svg)](https://github.com/php)
 
-Larabye is a open source mini PHP & MVC framework, created by **Mouad ZIANI (ROMAC)** 
+Larabye is a mini PHP framework inspired from laravel features, created by **Mouad ZIANI (ROMAC)** 
 # Installation
 ### Requirements
 - PHP >= 7.2
