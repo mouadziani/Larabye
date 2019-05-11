@@ -72,7 +72,7 @@ Larabye is easy to use and understand, if you still have a doubt about how PHP/M
     ├── .gitignore
     ├── composer.json
     ├── LICENCE
-    └── READMED.md
+    └── README.md
 ```      
 
 ## License
