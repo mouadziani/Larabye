@@ -6,4 +6,4 @@
 	$password = 'root';
 
 	define("ROOT", str_replace( basename($_SERVER['PHP_SELF']), "", $_SERVER['REQUEST_URI'] ));
-	define("WEBROOT", 'http://localhost:8282/php-projects/gestion-formation/public/');
+	define("WEBROOT", 'http://localhost/project-name/public/');
