@@ -3,7 +3,7 @@
 /**
  * 
  */
-class ExempleTest
+class ExempleTest 
 {
 	
 	function __construct(argument)
