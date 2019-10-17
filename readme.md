@@ -1,4 +1,4 @@
-# ⭐ Larabye ⭐
+# 🎉 Larabye 🎉
 [![PHP Min](https://img.shields.io/badge/PHP-%3E%3D%205.3-blue.svg)](https://github.com/php)
 [![GitHub license](https://img.shields.io/github/license/nhn/tui.calendar.svg)](https://github.com/MouadZIANI/Larabye/blob/master/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/mouadziani/Larabye/labels/help%20wanted)
