@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	function redirect($route)
 	{
@@ -24,7 +24,7 @@
 
 	function old($inputName = '', $default = '')
 	{
-		return $_POST[$inputName] ?? $default;
+		return $_POST[$inputName] ?? ($_GET[$inputName] ?? $default);
 	}
 
 	function serverMethod()
