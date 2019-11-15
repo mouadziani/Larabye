@@ -51,3 +51,4 @@
 </main>
 
 <?php require_once '../app/views/partials/_footer.php'; ?>
+<?php require_once '../app/views/partials/_sub_footer.php'; ?>

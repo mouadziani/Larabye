@@ -9,7 +9,7 @@
 				<form action="<?= route('user/update/' . $data['user']->id) ?>" method="post">
 					<div class="form-group">
 						<label for="username">UserName</label>
-						<input type="text" name="username" class="form-control <?= isset($data['errors']['username']) ? 'is-invalid' : '' ?>" placeholder="UserName" value="<?= old('username', $data['user']->username) ?>">  
+						<input type="text" name="username" class="form-control <?= isset($data['errors']['username']) ? 'is-invalid' : '' ?>" placeholder="UserName" value="<?= old('username', $data['user']->username) ?>">
 						<?php if (isset($data['errors']['username'])): ?>
 							<small class="invalid-feedback"><?= $data['errors']['username'] ?></small>
 						<?php endif ?>
@@ -51,3 +51,4 @@
 </main>
 
 <?php require_once '../app/views/partials/_footer.php'; ?>
+<?php require_once '../app/views/partials/_sub_footer.php'; ?>
