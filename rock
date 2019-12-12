@@ -1,12 +1,19 @@
 #!/usr/bin/env php
 <?php
+/*
+ * Author Mouad Boulahdoud
+ * MouadBH
+ * https://github.com/MouadBH
+ */
 
 require_once './vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
+require_once './app/commands/ClearcacheCommand.php';
 
 $application = new Application();
-# add our commands
+
 $application->add(new GreetCommand());
+$application->add(new ClearcacheCommand());
 
 $application->run();
