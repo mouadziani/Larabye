@@ -13,6 +13,9 @@
         "symfony/console": "^5.0"
     },
     "autoload": {
-      "classmap": ["app/Commands"]
+        "psr-4": {
+            "Console\\": "src"
+        },
+        "classmap": ["src/commands"]
     }
 }
