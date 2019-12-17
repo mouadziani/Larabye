@@ -7,15 +7,19 @@
  * https://github.com/MouadBH
  */
 
+require_once './src/commands/helpers/config.php';
 require_once './vendor/autoload.php';
+define("REALROOT", __DIR__);
 
 use Symfony\Component\Console\Application;
 use Console\Commands\GreetCommand;
 use Console\Commands\ClearcacheCommand;
+use Console\Commands\ServeCommand;
 
 $application = new Application();
 
 $application->add(new GreetCommand());
 $application->add(new ClearcacheCommand());
+$application->add(new ServeCommand());
 
 $application->run();

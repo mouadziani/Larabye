@@ -48,10 +48,10 @@ class GreetCommand extends Command
         }
 
         if ($input->getOption($this->commandOptionName)) {
-            $text = strtoupper($text);
+            $text = strtoupper('<info>' . $text . '</info>');
         }
 
-        $output->writeln($text);
+        $output->writeln('<info>' . $text . '</info>');
 
         return 0;
     }
