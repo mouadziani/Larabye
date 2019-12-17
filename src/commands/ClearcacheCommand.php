@@ -12,9 +12,6 @@ class ClearcacheCommand extends Command
     protected $commandName = 'clear:cache';
     protected $commandDescription = "Clears the application cache.";
 
-    protected $commandArgumentName = "name";
-    protected $commandArgumentDescription = "Who do you want to greet?";
-
     protected $commandHelpDescription = "Allows you to delete the application cache. Pass the --groups parameter to clear caches of specific groups.";
 
     protected function configure()

@@ -15,7 +15,7 @@ class GreetCommand extends Command
     protected $commandArgumentName = "name";
     protected $commandArgumentDescription = "Who do you want to greet?";
 
-    protected $commandOptionName = "cap"; // should be specified like "app:greet John --cap"
+    protected $commandOptionName = "cap"; // should be specified like "greet Mouad --cap"
     protected $commandOptionDescription = 'If set, it will greet in uppercase letters';    
 
     protected function configure()
