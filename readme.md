@@ -19,7 +19,7 @@ if you used the the download button unzip the folder and then open it, you can u
 
 Then run composer to install dependecies
 
-      $/ Larabye-master# composer install  
+      $/ Larabye-master composer install  
 
 Now it's all done, you only need to create a database and change configurations in **app/config.php** to match your server's configuration, for example:
 
