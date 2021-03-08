@@ -84,4 +84,4 @@ Larabye is licensed under the [MIT](LICENSE) license.
 ## Note 
 This project was made for 8.19
 
-Feautred_Repo
+feautred_repository
